@@ -1,6 +1,6 @@
 
 
-CREATE TABLE [position] (
+CREATE TABLE [search] (
 
 [ID] varchar(64)   NOT NULL ,
 [TS] varchar(64)   NULL ,
@@ -9,37 +9,34 @@ CREATE TABLE [position] (
 [LAST_MODIFIED] varchar(64)   NULL ,
 [LAST_MODIFY_USER] varchar(64)   NULL ,
 
-[address] VARCHAR(64)   NULL ,
-[city] VARCHAR(64)   NULL ,
-[street] VARCHAR(64)   NULL ,
+[rubbish_name] VARCHAR(64)   NULL ,
+[rubbish_kind] VARCHAR(64)   NULL ,
    PRIMARY KEY ([ID])
 )
 ON [PRIMARY]
 GO
 
-EXEC sp_addextendedproperty 'MS_Description',N'地址','user','dbo','TABLE','position','COLUMN','address'
+EXEC sp_addextendedproperty 'MS_Description',N'垃圾名称','user','dbo','TABLE','search','COLUMN','rubbish_name'
 GO
-EXEC sp_addextendedproperty 'MS_Description',N'城市','user','dbo','TABLE','position','COLUMN','city'
-GO
-EXEC sp_addextendedproperty 'MS_Description',N'街道','user','dbo','TABLE','position','COLUMN','street'
+EXEC sp_addextendedproperty 'MS_Description',N'垃圾种类','user','dbo','TABLE','search','COLUMN','rubbish_kind'
 GO
 
 
-EXEC sp_addextendedproperty 'MS_Description',N'主键 ID','user','dbo','TABLE','position','COLUMN','ID'
+EXEC sp_addextendedproperty 'MS_Description',N'主键 ID','user','dbo','TABLE','search','COLUMN','ID'
 GO
-EXEC sp_addextendedproperty 'MS_Description',N'乐观锁时间戳','user','dbo','TABLE','position','COLUMN','TS'
+EXEC sp_addextendedproperty 'MS_Description',N'乐观锁时间戳','user','dbo','TABLE','search','COLUMN','TS'
 GO
-EXEC sp_addextendedproperty 'MS_Description',N'修改时间','user','dbo','TABLE','position','COLUMN','LAST_MODIFIED'
+EXEC sp_addextendedproperty 'MS_Description',N'修改时间','user','dbo','TABLE','search','COLUMN','LAST_MODIFIED'
 GO
-EXEC sp_addextendedproperty 'MS_Description',N'修改人','user','dbo','TABLE','position','COLUMN','LAST_MODIFY_USER'
+EXEC sp_addextendedproperty 'MS_Description',N'修改人','user','dbo','TABLE','search','COLUMN','LAST_MODIFY_USER'
 GO
-EXEC sp_addextendedproperty 'MS_Description',N'创建时间','user','dbo','TABLE','position','COLUMN','CREATE_TIME'
+EXEC sp_addextendedproperty 'MS_Description',N'创建时间','user','dbo','TABLE','search','COLUMN','CREATE_TIME'
 GO
-EXEC sp_addextendedproperty 'MS_Description',N'创建人','user','dbo','TABLE','position','COLUMN','CREATE_USER'
+EXEC sp_addextendedproperty 'MS_Description',N'创建人','user','dbo','TABLE','search','COLUMN','CREATE_USER'
 GO
-EXEC sp_addextendedproperty 'MS_Description',N'租户标识','user','dbo','TABLE','position','COLUMN','TENANT_ID'
+EXEC sp_addextendedproperty 'MS_Description',N'租户标识','user','dbo','TABLE','search','COLUMN','TENANT_ID'
 GO
-EXEC sp_addextendedproperty 'MS_Description',N'是否删除','user','dbo','TABLE','position','COLUMN','DR'
+EXEC sp_addextendedproperty 'MS_Description',N'是否删除','user','dbo','TABLE','search','COLUMN','DR'
 GO
 
 
