@@ -25,7 +25,7 @@ import java.util.ArrayList;
 /**
 * 说明：垃圾站位置查询基础Controller——提供数据增(CREATE)、删(DELETE、改(UPDATE)、查(READ)等rest接口
 * @author  
-* @date 2019-9-10 21:49:48
+* @date 2019-9-11 13:58:44
 */
 @RestController("com.yonyou.positionsearch.controller.PositionsearchController")
 @RequestMapping(value = "/positionsearch/positionsearch")
@@ -46,9 +46,11 @@ public class PositionsearchController extends BaseController{
     @RequestMapping(value = "/list", method = RequestMethod.GET)
     @ResponseBody
     public Object list(@RequestParam( defaultValue = "0")Integer pageIndex,@RequestParam( defaultValue = "10")Integer pageSize
+            ,@RequestParam(required = false) String search_kind
             ,@RequestParam(required = false) String search_city
     ) {
         SimpleSearchDTO searchDTO = new SimpleSearchDTO();
+            searchDTO.setSearch_kind(search_kind);
             searchDTO.setSearch_city(search_city);
         PageRequest pageRequest;
         Sort sort= SearchUtil.getSortFromSortMap(searchDTO.getSorts(),Positionsearch.class);

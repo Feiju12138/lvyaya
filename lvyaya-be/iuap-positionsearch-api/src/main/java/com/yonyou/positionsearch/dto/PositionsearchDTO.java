@@ -13,7 +13,7 @@ import java.util.Random;
 /**
  * 垃圾站位置查询
  * @since v5.0.0
- * @date 2019-9-10 21:49:48
+ * @date 2019-9-11 13:58:44
  */
 
 @JsonIgnoreProperties(ignoreUnknown = true)
@@ -107,6 +107,17 @@ public class PositionsearchDTO  implements AuditTrail{
     }
     public String getAddress(){
         return this.address;
+    }
+
+
+
+    private String kind;        //垃圾种类
+
+    public void setKind(String kind){
+        this.kind = kind;
+    }
+    public String getKind(){
+        return this.kind;
     }
 
 

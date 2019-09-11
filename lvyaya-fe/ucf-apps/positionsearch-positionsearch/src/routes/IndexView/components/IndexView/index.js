@@ -219,6 +219,12 @@ export default class IndexView extends Component {
             width: 150,
         },
         {
+            title: "垃圾种类",
+            dataIndex: "kind",
+            key: "kind",
+            width: 150,
+        },
+        {
             title: "城市",
             dataIndex: "city",
             key: "city",

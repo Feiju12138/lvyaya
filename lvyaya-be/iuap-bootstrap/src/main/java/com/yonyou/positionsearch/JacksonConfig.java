@@ -12,7 +12,7 @@ import org.springframework.http.converter.json.Jackson2ObjectMapperBuilder;
  * 过滤为空字段,将有效解决数据传输过程中的流量浪费。
  * 还可移除po中description部分,一般情况下推荐启用
  * @author  
- * @date 2019-9-10 21:49:47
+ * @date 2019-9-11 13:58:44
  */
 @Configuration
 public class JacksonConfig {

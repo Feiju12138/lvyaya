@@ -18,11 +18,20 @@ import java.util.*;
  /**
   * 用于构造查询条件
   * @since v5.0.0
-  * @date 2019-9-10 21:49:47
+  * @date 2019-9-11 13:58:44
   */
 public class SimpleSearchDTO {
     private static Logger logger = LoggerFactory.getLogger(SimpleSearchDTO.class);
     private static String PARAM_SEARCH_PREFIX = "search_";
+
+        private String search_kind;     //垃圾种类
+
+        public void setSearch_kind(String kind){
+            this.search_kind = kind;
+        }
+        public String getSearch_kind(){
+            return this.search_kind;
+        }
 
         private String search_city;     //城市
 

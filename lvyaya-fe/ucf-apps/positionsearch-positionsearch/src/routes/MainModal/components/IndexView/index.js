@@ -203,6 +203,33 @@ if(typeof rowData !== 'undefined'){
         <FormError errorMsg={getFieldError('address')}/>
                                 </FormItem>
                                 <FormItem>
+        <Label >
+            垃圾种类
+        </Label>
+        <FormControl disabled={typeof btnFlag != 'undefined' && btnFlag == 2
+}
+            {
+            ...getFieldProps('kind', {
+                validateTrigger: 'onBlur',
+                initialValue: (typeof rowData === 'undefined' || typeof rowData.kind === 'undefined') ? "" : rowData.kind
+,
+                rules: [{
+                    type:'string',required: false,pattern:/\S+/ig, message: '请输入垃圾种类',
+                }],
+                onChange(value) {
+if(typeof rowData !== 'undefined'){
+    let tempRow = Object.assign({},rowData,{ kind: value });
+    _this.setState({
+        rowData:tempRow
+    })
+}
+                }
+            }
+            )}
+        />
+        <FormError errorMsg={getFieldError('kind')}/>
+                                </FormItem>
+                                <FormItem>
         <Label className="mast">
             城市
         </Label>

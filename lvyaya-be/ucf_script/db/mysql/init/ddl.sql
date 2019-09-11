@@ -1,10 +1,12 @@
 
--- drop table if EXISTS search;
-CREATE TABLE `search` (
+-- drop table if EXISTS position;
+CREATE TABLE `position` (
 `ID` VARCHAR(64) NOT NULL COMMENT '主键',
     PRIMARY KEY (`ID`),
-    `rubbish_name` VARCHAR(64) DEFAULT NULL COMMENT '垃圾名称',
-    `rubbish_kind` VARCHAR(64) DEFAULT NULL COMMENT '垃圾种类',
+    `address` VARCHAR(64) DEFAULT NULL COMMENT '地址',
+    `kind` VARCHAR(64) DEFAULT NULL COMMENT '垃圾种类',
+    `city` VARCHAR(64) DEFAULT NULL COMMENT '城市',
+    `street` VARCHAR(64) DEFAULT NULL COMMENT '街道',
         `TENANT_ID` varchar(64) DEFAULT NULL,
         `DR` int(11) DEFAULT NULL COMMENT '是否删除',
         `TS` varchar(64) DEFAULT NULL COMMENT '时间戳',
