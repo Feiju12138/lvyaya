@@ -17,7 +17,7 @@ import java.util.Random;
 /**
  * 垃圾站位置查询
  * @since v5.0.0
- * @date 2019-9-11 13:58:44
+ * @date 2019-9-13 20:30:19
  */
 
 @JsonIgnoreProperties(ignoreUnknown = true)
@@ -91,7 +91,7 @@ public class Positionsearch extends BasePO implements AuditTrail{
     }
 
 
-    @Condition(match=Match.LIKE)
+    @Condition
     @Column(name="kind")
     private String kind;        //垃圾种类
 
