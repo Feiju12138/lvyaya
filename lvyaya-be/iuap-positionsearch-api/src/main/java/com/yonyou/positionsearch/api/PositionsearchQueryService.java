@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * RPC 调用接口声明
  * @author  
- * @date 2019-9-13 20:30:18
+ * @date 2019-9-13 20:31:06
  */
 @RemoteCall("iuap-lvyaya-server")
 public interface PositionsearchQueryService {

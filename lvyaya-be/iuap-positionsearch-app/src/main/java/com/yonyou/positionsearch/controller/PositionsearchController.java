@@ -25,7 +25,7 @@ import java.util.ArrayList;
 /**
 * 说明：垃圾站位置查询基础Controller——提供数据增(CREATE)、删(DELETE、改(UPDATE)、查(READ)等rest接口
 * @author  
-* @date 2019-9-13 20:30:18
+* @date 2019-9-13 20:31:07
 */
 @RestController("com.yonyou.positionsearch.controller.PositionsearchController")
 @RequestMapping(value = "/positionsearch/positionsearch")

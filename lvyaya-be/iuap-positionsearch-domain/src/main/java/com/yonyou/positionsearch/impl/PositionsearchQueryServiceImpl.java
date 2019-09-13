@@ -18,7 +18,7 @@ import java.util.Map;
 /**
  * RPC provider端
  * @author  
- * @date 2019-9-13 20:30:19
+ * @date 2019-9-13 20:31:07
  */
 @Service("com.yonyou.positionsearch.impl.PositionsearchQueryServiceImpl")
 public class PositionsearchQueryServiceImpl implements PositionsearchQueryService {
