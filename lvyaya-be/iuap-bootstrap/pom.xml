@@ -21,6 +21,11 @@
             <artifactId>iuap-positionsearch-app</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.yonyou.iuap</groupId>
+            <artifactId>iuap-textsearch-app</artifactId>
+            <version>${project.version}</version>
+        </dependency>
 
         <dependency>
             <groupId>com.yonyou.iuap</groupId>

@@ -14,6 +14,9 @@
         <module>iuap-positionsearch-api</module>
         <module>iuap-positionsearch-app</module>
         <module>iuap-positionsearch-domain</module>
+        <module>iuap-textsearch-api</module>
+        <module>iuap-textsearch-app</module>
+        <module>iuap-textsearch-domain</module>
     </modules>
 
     <packaging>pom</packaging>
