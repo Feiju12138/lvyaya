@@ -7,24 +7,40 @@
   1. 通过输入垃圾名称，检索垃圾所属类别
   2. 通过输入所在城市，检索垃圾站位置
 
-* 使用说明：
+* 源代码使用说明：
 
-  1. 编译：
+  1. 下载源代码：
+
+     ```bash
+     cd ~/Downloads
+     git clone -b codegen https://github.com/Feiju12138/lvyaya.git
+     ```
+
+     
+
+  2. 编译：
 
      1. 前端
 
         ```shell
-        cd /lvyaya/lvyaya-fe/
+        cd ~/Downloads/lvyaya/lvyaya-fe/
         sudo npm install
         sudo npm start
+        ```
+
+     2. 后端
+
+        ```bash
+        cd ~/Downloads/lvyaya/
+        
         ```
 
         
 
 * 待开发功能：
 
-  
+  百度地图API
 
 * 开发者目录：
 
-http://lvyaya.f1f9b69e-8a9f-4520-a4f3-e52dad7dbe18.dev.app.yyuap.com
+  SunShine团队
